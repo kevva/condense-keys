@@ -1,6 +1,6 @@
 {
   "name": "condense-keys",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remove keys with empty values from an object",
   "license": "MIT",
   "repository": "kevva/condense-keys",
