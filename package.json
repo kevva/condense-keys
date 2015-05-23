@@ -1,0 +1,35 @@
+{
+  "name": "condense-keys",
+  "version": "1.0.0",
+  "description": "Remove keys with empty values from an object",
+  "license": "MIT",
+  "repository": "kevva/condense-keys",
+  "author": {
+    "name": "Kevin Martensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "github.com/kevva"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "condense",
+    "empty",
+    "keys",
+    "value",
+    "object"
+  ],
+  "dependencies": {
+    "object-assign": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.0.4",
+    "deep-equal": "^1.0.0"
+  }
+}
