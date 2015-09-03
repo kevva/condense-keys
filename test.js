@@ -8,9 +8,14 @@ test(function (t) {
 		a: 'foo',
 		b: null,
 		c: undefined,
-		d: ''
+		d: '',
+		e: {
+			a: null,
+			b: undefined,
+			c: 'foo'
+		}
 	};
 
-	t.assert(deepEqual(condenseKeys(obj), {a: 'foo'}));
+	t.assert(deepEqual(condenseKeys(obj), {a: 'foo', e: {c: 'foo'}}));
 	t.end();
 });

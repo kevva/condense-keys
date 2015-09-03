@@ -26,6 +26,7 @@
     "object"
   ],
   "dependencies": {
+    "is-obj": "^1.0.0",
     "object-assign": "^2.0.0"
   },
   "devDependencies": {
