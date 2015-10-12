@@ -1,10 +1,8 @@
-'use strict';
-var deepEqual = require('deep-equal');
-var test = require('ava');
-var condenseKeys = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	var obj = {
+test(t => {
+	const obj = {
 		a: 'foo',
 		b: null,
 		c: undefined,
@@ -16,6 +14,6 @@ test(function (t) {
 		}
 	};
 
-	t.assert(deepEqual(condenseKeys(obj), {a: 'foo', e: {c: 'foo'}}));
+	t.same(fn(obj), {a: 'foo', e: {c: 'foo'}});
 	t.end();
 });

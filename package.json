@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && node test.js"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -30,8 +30,7 @@
     "object-assign": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.0.4",
-    "deep-equal": "^1.0.0",
+    "ava": "*",
     "xo": "*"
   }
 }
