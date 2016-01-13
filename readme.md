@@ -13,7 +13,7 @@ $ npm install --save condense-keys
 ## Usage
 
 ```js
-var condenseKeys = require('condense-keys');
+const condenseKeys = require('condense-keys');
 
 condenseKeys({a: 'foo', b: null, c: undefined, d: ''});
 //=> {a: 'foo'}

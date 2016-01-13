@@ -15,5 +15,4 @@ test(t => {
 	};
 
 	t.same(fn(obj), {a: 'foo', e: {c: 'foo'}});
-	t.end();
 });
