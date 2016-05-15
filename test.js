@@ -1,5 +1,5 @@
 import test from 'ava';
-import fn from './';
+import m from './';
 
 test(t => {
 	const obj = {
@@ -14,5 +14,5 @@ test(t => {
 		}
 	};
 
-	t.deepEqual(fn(obj), {a: 'foo', e: {c: 'foo'}});
+	t.deepEqual(m(obj), {a: 'foo', e: {c: 'foo'}});
 });
