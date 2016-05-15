@@ -1,24 +1,18 @@
 'use strict';
-var isObj = require('is-obj');
-var objectAssign = require('object-assign');
+const isObj = require('is-obj');
 
-function del(obj) {
-	var keys = Object.keys(obj);
-
-	for (var i = 0; i < keys.length; i++) {
-		if (obj[keys[i]] === undefined || obj[keys[i]] === null || obj[keys[i]] === '') {
-			delete obj[keys[i]];
+const del = obj => {
+	for (const x of Object.keys(obj)) {
+		if (obj[x] === undefined || obj[x] === null || obj[x] === '') {
+			delete obj[x];
 		}
 
-		if (isObj(obj[keys[i]])) {
-			del(obj[keys[i]]);
+		if (isObj(obj[x])) {
+			del(obj[x]);
 		}
 	}
 
 	return obj;
-}
-
-module.exports = function (obj) {
-	var o = objectAssign({}, obj);
-	return del(o);
 };
+
+module.exports = obj => del(Object.assign({}, obj));
